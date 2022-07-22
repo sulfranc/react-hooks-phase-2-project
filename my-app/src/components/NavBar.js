@@ -16,7 +16,7 @@ function NavBar(){
             <h1>Home</h1>
             </NavLink>
             <NavLink  to="/about">
-            <h1>About</h1>
+            <h1>Random Joke</h1>
             </NavLink>
             <NavLink  to="/think">
             <h1>Think</h1>

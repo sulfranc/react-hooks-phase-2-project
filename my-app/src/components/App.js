@@ -1,7 +1,7 @@
 import Home from "./Home";
 import NavBar from "./NavBar";
 import Think from "./Think";
-import About from "./About";
+import About from "./RandomJoke";
 import { Routes, Route } from "react-router-dom";
 
 

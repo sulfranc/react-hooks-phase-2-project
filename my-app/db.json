@@ -1,16 +1,30 @@
 {
-    "toys": [
+    "Jokes": [
       {
         "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
+        "joke": "Why did the scarecrow win an award? Because he was outstanding in his field."
       },
       {
         "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
+        "joke": "Why did the melon jump into the lake? It wanted to be a water-melon."
+
+      },
+      {
+        "id": 3,
+        "joke": "What do you call a pig that does karate? A pork chop"
+
+      }
+      ,
+      {
+        "id": 4,
+        "joke": "How does the ocean say hello? It waves."
+
+      }
+      ,
+      {
+        "id": 5,
+        "joke": "Where do you learn to make banana splits? At sundae school."
+
       }
     ]
   }
