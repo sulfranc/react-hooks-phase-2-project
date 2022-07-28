@@ -1,8 +1,8 @@
 import Home from "./Home";
 import NavBar from "./NavBar";
-import Think from "./Think";
-import About from "./RandomJoke";
 import { Routes, Route } from "react-router-dom";
+import CreateJoke from "./CreateJoke";
+import RandomJoke from "./RandomJoke";
 
 
 
@@ -16,8 +16,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="home" element={<Home />}/>
-          <Route path="think" element={<Think />} />
-          <Route path="about" element={<About />} />
+          <Route path="createjoke" element={<CreateJoke />} />
+          <Route path="randomjoke" element={<RandomJoke />} />
         </Routes>
       
 

@@ -15,11 +15,11 @@ function NavBar(){
             <NavLink  to="/home">
             <h1>Home</h1>
             </NavLink>
-            <NavLink  to="/about">
+            <NavLink  to="/randomjoke">
             <h1>Random Joke</h1>
             </NavLink>
-            <NavLink  to="/think">
-            <h1>Think</h1>
+            <NavLink  to="/createjoke">
+            <h1>Create Joke</h1>
             </NavLink>
       </div>
     )
