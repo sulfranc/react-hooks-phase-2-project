@@ -21,7 +21,6 @@ function RandomJoke() {
             
             console.log(jokes)
             setJokeElem(jokes[Math.floor(Math.random() * jokes.length)])
-            console.log(jokeElem.id)
             console.log(jokeElem.joke)
             console.log(jokeElem.answer)
            
