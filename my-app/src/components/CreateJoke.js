@@ -1,8 +1,9 @@
 import { useState } from "react";
+import React from "react";
 
 
-function CreateJoke(){
-    const [data,setNewData] = useState({
+function CreateJoke({onAddJoke}){
+    const [formData,setFormData] = useState({
         joke:"",
         answer:""
 
@@ -10,49 +11,38 @@ function CreateJoke(){
 
 
       function handleJokeChange(e){
-          const newData = {...data}
-          newData[e.target.id] = e.target.value
-          setNewData(newData)
-          console.log(newData)
+          setFormData({
+            ...formData,
+            [e.target.name] : e.target.value
+          })
+          
+          
 
       }
    
     
     function handleSubmit(e){
        e.preventDefault()
+       const newJoke = {
+           ...formData
+       }
+      
        
-    //    const data = { username: 'example' };
-
-    //     fetch('https://example.com/profile', {
-    //     method: 'POST', // or 'PUT'
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    //     })
-    //     .then((response) => response.json())
-    //     .then((data) => {
-    //         console.log('Success:', data);
-    //     })
-    //     .catch((error) => {
-    //         console.error('Error:', error);
-    //     });
-
-        console.log(data)
+        console.log(formData)
         fetch('http://localhost:3000/Jokes', {
         method: 'POST',
         headers: { 'Content-type': 'application/json', },
-        body: JSON.stringify(data)
+        body: JSON.stringify(newJoke),
         })
-        .then((resp)=> {
-            console.log(resp)
-           return resp.json()})
-        .then((data) => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+        .then((resp) => 
+           {
+          console.log(resp)
+          console.log(newJoke)
+          return resp.json()}
+        )
+        .then(onAddJoke)
+        .catch((error)=>console.log(error))
+        
         
         }
     
@@ -64,23 +54,28 @@ function CreateJoke(){
             <label>
                 Joke:
                 <input
-                id="joke"
                 type="text"
                 name="joke"
-                value={data.joke}
+                value={formData.joke}
                 onChange = {handleJokeChange}                />
             </label>
             <label>
                 Answer:
                 <input
-                id="answer"
                 type="text"
                 name="answer"
-                value={data.answer}
+                value={formData.answer}
                 onChange = {handleJokeChange}
                 />
             </label>
-            <button type="submit">Add Joke</button>
+            <br/>
+            <input
+             type="submit"
+             name="submit"
+             value="Create new joke"
+             className="submit"
+           />
+        
 
             
         </form>
