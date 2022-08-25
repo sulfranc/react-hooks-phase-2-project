@@ -48,39 +48,46 @@ function CreateJoke({onAddJoke}){
     
 
     return(
-        <>
-        <h2>CreateJoke</h2>
-        <form onSubmit={handleSubmit}>
-            <label>
-                Joke:
-                <input
-                type="text"
-                name="joke"
-                value={formData.joke}
-                onChange = {handleJokeChange}                />
-            </label>
-            <label>
-                Answer:
-                <input
-                type="text"
-                name="answer"
-                value={formData.answer}
-                onChange = {handleJokeChange}
-                />
-            </label>
-            <br/>
-            <input
-             type="submit"
-             name="submit"
-             value="Create new joke"
-             className="submit"
-           />
         
+        <div class="text-center" color="blue">
+            <div class= 'container-fluid'>
 
+            </div>
+            <h2>CreateJoke</h2>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Joke:
+                    <input
+                    type="text"
+                    name="joke"
+                    value={formData.joke}
+                    onChange = {handleJokeChange}                />
+                </label>
+                <label>
+                    Answer:
+                    <input
+                    type="text"
+                    name="answer"
+                    value={formData.answer}
+                    onChange = {handleJokeChange}
+                    />
+                </label>
+                <br/>
+                <br/>
+                <input
+                type="submit"
+                name="submit"
+                value="Create new joke"
+                className="submit"
+                class = 'btn btn-primary'
+                
+                />
             
-        </form>
+
+                
+            </form>
         
-        </>
+        </div>
         
     )
 }
