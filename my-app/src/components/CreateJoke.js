@@ -55,6 +55,7 @@ function CreateJoke({onAddJoke}){
             </div>
             <h2>CreateJoke</h2>
             <form onSubmit={handleSubmit}>
+                
                 <label>
                     Joke:
                     <input
