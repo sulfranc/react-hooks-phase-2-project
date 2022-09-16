@@ -12,8 +12,6 @@ function RandomJoke() {
             .then(data => setJokes(data))            
             .catch(console.error())
 
-            
-
     },[]
     )
         

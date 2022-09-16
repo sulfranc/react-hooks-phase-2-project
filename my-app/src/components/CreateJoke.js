@@ -26,7 +26,8 @@ function CreateJoke({onAddJoke}){
        const newJoke = {
            ...formData
        }
-      
+      formData.joke = ''
+      formData.answer = ''
        
         console.log(formData)
         fetch('http://localhost:3000/Jokes', {
