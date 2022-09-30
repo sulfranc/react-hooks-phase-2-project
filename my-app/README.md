@@ -1,5 +1,7 @@
 # Jokes App is an apllication for making people luagh and creating jokes.
 
+The Joke app is an application that takes in a user joke and adds them to the  server. Later there joke will be added to the list of random jokes and every time a user clicks get joke a random joke will be displayed.
+
 Cloning a repository
 On GitHub.com, navigate to the main page of the repository.
 
