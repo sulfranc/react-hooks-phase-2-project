@@ -74,5 +74,5 @@ SOFTWARE.
 
 ## Screenshots
 
-![App Screenshot](/my-app/Jokesapp.png)
+![App Screenshot](https://i.postimg.cc/mkCSt8mn/Jokesapp.png)
 
