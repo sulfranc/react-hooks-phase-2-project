@@ -7,7 +7,7 @@ function Home(){
                 <h2>Jokes App</h2>
             </div>
             
-            <img src="https://youthincmag.com/wp-content/uploads/2020/06/Good-Times.gif" width='100%' height='100%'/>
+            <img alt= 'Man laughing'src="https://youthincmag.com/wp-content/uploads/2020/06/Good-Times.gif" width='100%' height='100%'/>
             
         </div>
         

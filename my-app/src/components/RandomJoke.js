@@ -25,14 +25,14 @@ function RandomJoke() {
             
        }
     return (
-        <div class="text-center">
+        <div class="random joke text-center">
             <h2>RandomJoke</h2>
             <button onClick={getRandomJoke}>Get Random Joke</button>
             <h3>{jokeElem.joke}</h3>
             <button onClick={() => setShowText(!showText)}>Get Answer</button> 
             {showText && <h3>{jokeElem.answer}</h3>}   
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU7avbs2X741wgaTElDsGG3rCDoeqyB6CkBg&usqp=CAU" width ='50%' height='60%'/>  
+                <img alt = 'laughing emoji'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU7avbs2X741wgaTElDsGG3rCDoeqyB6CkBg&usqp=CAU" width ='50%' height='60%'/>  
             </div>
                  
             

@@ -50,7 +50,7 @@ function CreateJoke({onAddJoke}){
 
     return(
         
-        <div class="text-center" color="blue">
+        <div class="Form text-center" color="blue">
             <div class= 'container-fluid'>
 
             </div>
